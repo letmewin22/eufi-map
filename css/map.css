@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#map {
+	width: 100%;
+	height: 60vh;
+}
+
+.gm-style .gm-style-iw {
+	font-size: 16px !important;
+	text-align: center;
+}
+
+#map .map-p {
+	font-size: 16px !important;
+	margin-top: 10px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+}
