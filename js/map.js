@@ -10,11 +10,12 @@ function initMap() {
     let school = { lat: 50.229945, lng: 14.0866093 };
     let kindergarten;
     let theatre = { lat: 50.2301918, lng: 14.0823909 };
+    let centerR = {lat: 50.232173788318, lng: 14.08980457199708}
 
 
 /*init*/
     let map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 15, center: theatre,
+        document.getElementById('map'), { zoom: 15, center: centerR,
              styles: [
     {
         "featureType": "water",
@@ -400,4 +401,25 @@ mlyn = new google.maps.places.PlacesService(map);
         Theatre.open(map, marker9);
     });
 
+      var a = 50.2284181,
+      b = 14.0878689,
+      diff = 0.0033;
+
+        var polygonCoordinates = [
+{lat: 50.23357382023321, lng: 14.09405319107667},
+{lat: 50.23556126313127, lng: 14.094739836584482},
+{lat: 50.23550636298192, lng: 14.108597011267081},
+{lat: 50.2333652078447, lng: 14.109107513891614}
+
+  ];
+
+  var polygon = new google.maps.Polygon({
+    map: map,
+    paths: polygonCoordinates,
+    strokeColor: 'green',
+    fillColor: 'green',
+    fillOpacity: 0.4,
+    draggable: false,
+    editable: false
+  });
 }
